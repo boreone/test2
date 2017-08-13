@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.xzh.gooddetail.view.SlideDetailsLayout
+            android:id="@+id/slideDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eeeff3"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white">
+
+                        <com.bigkoo.convenientbanner.ConvenientBanner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            app:canLoop="true" />
+                    </FrameLayout>
+
+                    <View style="@style/common_horizontal_line" />
+
+
+                    <TextView
+                        style="@style/style_black_s15"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Letv/乐视LETV体感-超级枪王 乐视TV超级电视产品玩具体感游戏枪 电玩道具黑色" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="bottom"
+                        android:minHeight="25dp"
+                        android:orientation="horizontal"
+                        android:paddingRight="12dp">
+
+                        <TextView
+                            style="@style/style_red_s18"
+                            android:layout_marginLeft="3dp"
+                            android:text="￥599"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/style_black_s15"
+                            android:layout_marginLeft="7dp"
+                            android:text="￥799" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已选"
+                            android:textColor="#888888"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_current_goods"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:text="黑色, 1件"
+                            android:textColor="#222222"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/right_img" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/item_goods_ensure" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="用户点评"
+                            android:textColor="#222222"
+                            android:textSize="13dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical|right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="好评度"
+                                android:textColor="#222222"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="100%"
+                                android:textColor="#ec0f38"
+                                android:textSize="13dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:src="@mipmap/right_img" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="123dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="暂无精华评论"
+                        android:textColor="#888888"
+                        android:textSize="13dp" />
+
+                    <!-- 小二推荐 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff"
+                        android:orientation="vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginTop="14dp"
+                            android:text="小二推荐"
+                            android:textColor="#222222"
+                            android:textSize="13dp" />
+
+                        <com.bigkoo.convenientbanner.ConvenientBanner
+                            android:id="@+id/recommend_banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="264dp"
+                            android:background="#ffffff"
+                            app:canLoop="true" />
+                    </LinearLayout>
+
+                    <!-- 上拉查看图文详情 -->
+                    <TextView
+                        android:id="@+id/pull_up_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@mipmap/top"
+                        android:drawablePadding="6dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="上拉查看图文详情"
+                        android:textColor="#222222"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <include layout="@layout/include_item_tab" />
+        </com.xzh.gooddetail.view.SlideDetailsLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="30dp"
+            android:src="@mipmap/go_top"
+            app:backgroundTint="#ffffff"
+            app:borderWidth="0dp"
+            app:fabSize="mini"
+            app:rippleColor="#ffffff" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
