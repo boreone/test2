@@ -1,0 +1,92 @@
+ public void initNavigationView() {
+        /**
+         * Intent intent = new Intent(this, MyActivity.class);
+         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+         startActivity(intent);
+         If an instance of this Activity already exists,
+         then it will be moved to the front.
+         If an instance does NOT exist, a new instance will be created.
+         */
+        navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.one:
+                        Intent intent1 = new Intent(getBaseContext(), MainActivity.class);
+                        intent1.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivity(intent1);
+//                        startActivity(new Intent(getBaseContext(), MainActivity.class));
+//                        new Thread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//
+//                                runOnUiThread(new Runnable() {
+//                                    @Override
+//                                    public void run() {
+//                                        //跳转至 MainActivity
+//                                        new Handler().postDelayed(new Runnable() {
+//                                            @Override
+//                                            public void run() {
+////                                                Intent intent = new Intent(WelcomeActivity.this, ThreeActivity.class);
+////                                                //intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+////                                                startActivity(intent);
+////                                                WelcomeActivity.this.finish();
+//
+//                                            }
+//                                        }, 0);//delay2000ms
+//
+//                                    }
+//                                });
+//
+//                            }
+//                        }).start();
+
+                        break;
+                    case R.id.two:
+                        Intent intent2 = new Intent(getBaseContext(), TwoActivity.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivity(intent2);
+//                        startActivity(new Intent(getBaseContext(), TwoActivity.class));
+                        break;
+                    case R.id.three:
+                        Intent intent3 = new Intent(getBaseContext(), ThreeActivity.class);
+                        intent3.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivity(intent3);
+                        break;
+                    case R.id.four:
+                        Intent intentFour = new Intent(getBaseContext(), FourActivity.class);
+                        intentFour.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivity(intentFour);
+                        break;
+                    case R.id.five:
+                        Intent intentFive = new Intent(getBaseContext(), FiveActivity.class);
+                        intentFive.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivity(intentFive);
+//                        startActivity(new Intent(getBaseContext(), FiveActivity.class));
+//                        new Thread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//
+//                                runOnUiThread(new Runnable() {
+//                                    @Override
+//                                    public void run() {
+//                                        //跳转至 MainActivity
+//                                        new Handler().postDelayed(new Runnable() {
+//                                            @Override
+//                                            public void run() {
+//
+//                                            }
+//                                        }, 0);//delay2000ms
+//
+//                                    }
+//                                });
+//
+//                            }
+//                        }).start();
+
+                        break;
+                }
+                return true;
+            }
+        });
+    }
